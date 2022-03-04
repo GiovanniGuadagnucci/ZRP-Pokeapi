@@ -2,7 +2,7 @@
 
 Intermediate API for PokeApi consumption
 
-## Get /pokemons/:pokemon_name
+## Get /api/v1/pokemon/:pokemon_name
 
 Returns a list of abilitys for a given pokemon sorted by ability name
 
@@ -15,6 +15,11 @@ Returns a list of abilitys for a given pokemon sorted by ability name
         name        |            Returns Pokemon ability Name           |    String
         flavor_text |            Returns Pokemon ability flavor text    |    String
         effect      |            Returns Pokemon ability effect         |    String
+        
+### Request exemple
+```
+http://127.0.0.1:3000/api/v1/pokemon/ditto
+```
 
 ### Response exemple
 ```ruby
